@@ -89,7 +89,6 @@ INSERT INTO tbl_language (`id`,`name`,`folder`,`author`) VALUES ("2","English","
 
 CREATE TABLE `tbl_logs` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
-  --`date` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',--
   `date` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   `type` varchar(50) NOT NULL,
   `description` text NOT NULL,
